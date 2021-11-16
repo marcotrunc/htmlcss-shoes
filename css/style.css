@@ -3,6 +3,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+html{
+    overflow-y: hidden;
 }
 
 /* Utilities */
@@ -15,52 +19,100 @@
     clear: both;
 
 }
+.text-yellow{
+    color: yellow;
+    }
+.text-green{
+        color: green;
+    }
 
-main{
+.card-mocassini{
     background-color: red;
+}
+.card-adidas{
+    background-color: green;
+}
+.card-converse{
+    background-color: yellow;
+}
+section{
     height: 100vh;
     position: relative;
 }
 
+/* card */
 
-.image{
-    width: 600px;
-    height: 350px;
-    background-color: yellow;
+.card{
+    width: 500px;
+    height: 400px;
+  
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    text-align: center;
-    line-height: 250px;
-   
+}
+
+img{
+    width: 100%;
 }
 .text{
-    width: 400px;
-    height: 100px;
-    background-color: yellowgreen;
-
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
 }
+h1{
+    font-size: 30px;
+}
+/* Navigatore */
+
 nav{
-    width: 400px;
+    width: 250px;
     height: 100px;
-    background-color: turquoise;
+    margin-right: 30px;
     position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
     
 }
-
-.image #mocassini{
+nav ul{
     width: 100%;
+    height: 100%;
+    position: relative;
+}
+ a{
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+ 
+}
+
+li{
+    display: inline-block;
+    
+}
+ #tasto-primo{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+ #tasto-secondo{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-  
+}
+
+ #tasto-terzo{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
 
 }
