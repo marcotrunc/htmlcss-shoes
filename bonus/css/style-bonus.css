@@ -54,9 +54,18 @@ section{
 
 img{
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .text{
+    width: 500px;
     text-align: center;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%,0);
 }
 h1{
     font-size: 30px;
